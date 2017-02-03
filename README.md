@@ -1,4 +1,4 @@
-# OctoberCMS Earth Null School Maps plugin
+<!--# OctoberCMS Earth Null School Maps plugin
 
 Global map of wind, weather, and ocean conditions.
 
@@ -45,3 +45,4 @@ This plugin adds integration with [Earth Null School maps](https://earth.nullsch
 - **Modification of the widget:** Allows to set modification of the widget "Recent comments" - widget of last comments, "Popular articles" - widget of popular articles
 - **Count:** Allows to set the number of comments or articles to be displayed in the widget (1-100)
 - **Combined:** Display last comments and popular pages in widget tabs
+-->
