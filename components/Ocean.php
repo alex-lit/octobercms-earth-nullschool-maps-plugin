@@ -4,51 +4,40 @@ use Lang;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 
-class Air extends ComponentBase
+class Ocean extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name'        => 'Air',
-            'description' => 'World air map',
+            'name'        => 'Ocean',
+            'description' => 'World ocean map',
         ];
     }
 
     public function defineProperties()
     {
         return [
-            'height'                                   => [
-                'title'                                => 'Height',
+            'animate'                                  => [
+                'title'                                => 'Animate',
                 'type'                                 => 'dropdown',
                 'options'                              => [
-                    'surface/level'                    => 'Surface',
-                    'isobaric/1000hPa'                 => '1000hPa',
-                    'isobaric/850hPa'                  => '850hPa',
-                    'isobaric/700hPa'                  => '700hPa',
-                    'isobaric/500hPa'                  => '500hPa',
-                    'isobaric/250hPa'                  => '250hPa',
-                    'isobaric/70hPa'                   => '70hPa',
-                    'isobaric/10hPa'                   => '10hPa'
+                    'surface/currents'                 => 'Ocean Currents',
+                    'primary/waves'                    => 'Peak Wave Period'
                 ],
-                'default'                              => 'surface/level'
+                'default'                              => 'primary/waves'
             ],
             'overlay'                                  => [
                 'title'                                => 'Overlay',
                 'type'                                 => 'dropdown',
                 'options'                              => [
-                    ''                                 => 'Wind',
-                    'overlay=temp'                     => 'Temperature',
-                    'overlay=relative_humidity'        => 'Relative Humidity',
-                    'overlay=wind_power_density'       => 'Instantaneous Wind Power Density',
-                    'overlay=precip_3hr'               => '3-hour Precipitation Accumulation',
-                    'overlay=cape'                     => 'Convective Available Potential Energy from Surface',
-                    'overlay=total_precipitable_water' => 'Total Precipitable Water',
-                    'overlay=total_cloud_water'        => 'Total Cloud Water',
-                    'overlay=mean_sea_level_pressure'  => 'Mean Sea Level Pressure',
-                    'overlay=misery_index'             => 'Misery Index',
+                    ''                                 => 'Ocean Currents',
+                    'overlay=primary_waves'            => 'Peak Wave Period',
+                    'overlay=sea_surface_temp'         => 'Sea Surface Temperature',
+                    'overlay=sea_surface_temp_anomaly' => 'Sea Surface Temperature Anomaly',
+                    'overlay=significant_wave_height'  => 'Significant Wave Height',
                     'overlay=off'                      => 'None'
                 ],
-                'default'                              => ''
+                'default'                              => 'overlay=significant_wave_height'
             ],
             'projection'                               => [
                 'title'                                => 'Projection',

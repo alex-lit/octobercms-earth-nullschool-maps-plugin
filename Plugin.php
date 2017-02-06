@@ -20,7 +20,9 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-           '\AlexLit\EarthNullSchoolMaps\Components\Air' => 'airMap'
+           '\AlexLit\EarthNullSchoolMaps\Components\Air'       => 'airMap',
+           '\AlexLit\EarthNullSchoolMaps\Components\Ocean'     => 'oceanMap',
+           '\AlexLit\EarthNullSchoolMaps\Components\Chemistry' => 'chemistryMap',
         ];
     }
 }
