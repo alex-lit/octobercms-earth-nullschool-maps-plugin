@@ -4,13 +4,13 @@ use Lang;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 
-class Chemistry extends ComponentBase
+class Particulates extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name'        => 'Chemistry',
-            'description' => 'World chemistry map',
+            'name'        => 'Particulates',
+            'description' => 'World particulates map',
         ];
     }
 
@@ -21,11 +21,10 @@ class Chemistry extends ComponentBase
                 'title'                     => 'Overlay',
                 'type'                      => 'dropdown',
                 'options'                   => [
-                    'cosc'                  => 'Carbon Monoxide Surface Concentration',
-                    'co2sc'                 => 'Carbon Dioxide Surface Concentration',
-                    'so2smass'              => 'Sulfur Dioxide Surface Mass'
+                    'duexttau'              => 'Dust Extinction (Aerosol Optical Thickness, 550 nm)',
+                    'suexttau'              => 'Sulfate Extinction (Aerosol Optical Thickness, 550 nm)'
                 ],
-                'default'                   => 'cosc'
+                'default'                   => 'duexttau'
             ],
             'projection'                    => [
                 'title'                     => 'Projection',

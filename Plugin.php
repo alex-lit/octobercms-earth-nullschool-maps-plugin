@@ -10,7 +10,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Earth Null School Maps',
-            'description' => 'Global map of wind, weather, and ocean conditions',
+            'description' => 'Global map of wind, weather, and ocean conditions.',
             'author'      => 'Alexey Litovchenko',
             'icon'        => 'icon-globe',
             'homepage'    => 'https://web2easy.ru'
@@ -23,6 +23,7 @@ class Plugin extends PluginBase
            '\AlexLit\EarthNullSchoolMaps\Components\Air'       => 'airMap',
            '\AlexLit\EarthNullSchoolMaps\Components\Ocean'     => 'oceanMap',
            '\AlexLit\EarthNullSchoolMaps\Components\Chemistry' => 'chemistryMap',
+           '\AlexLit\EarthNullSchoolMaps\Components\Particulates' => 'particulatesMap'
         ];
     }
 }
