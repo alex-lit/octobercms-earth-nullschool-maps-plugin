@@ -1,6 +1,14 @@
- {% set height  = __SELF__.property('height') %}
+ {% set height     = __SELF__.property('height') %}
+ {% set overlay    = __SELF__.property('overlay') %}
+ {% set projection = __SELF__.property('projection') %}
+ {% set mapWidth   = __SELF__.property('mapWidth') %}
+ {% set mapHeight  = __SELF__.property('mapHeight') %}
 
-<iframe src="https://earth.nullschool.net/#current/wind/{{height}}}/orthographic" width="100%" height="480"></iframe>
+<iframe
+    src    = "https://earth.nullschool.net/#current/wind/{{ height }}/{{ overlay }}/{{ projection }}"
+    width  = "{{ mapWidth }}"
+    height = "{{ mapHeight }}"
+></iframe>
 
 
 

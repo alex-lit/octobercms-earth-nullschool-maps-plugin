@@ -10,7 +10,7 @@ class Air extends ComponentBase
     {
         return [
             'name'        => 'Air',
-            'description' => 'Adds air map',
+            'description' => 'World air map',
         ];
     }
 
@@ -39,7 +39,7 @@ class Air extends ComponentBase
                     ''                                 => 'Wind',
                     'overlay=temp'                     => 'Temperature',
                     'overlay=relative_humidity'        => 'Relative Humidity',
-                    '000overlay=wind_power_density00'  => 'Instantaneous Wind Power Density',
+                    'overlay=wind_power_density'       => 'Instantaneous Wind Power Density',
                     'overlay=precip_3hr'               => '3-hour Precipitation Accumulation',
                     'overlay=cape'                     => 'Convective Available Potential Energy from Surface',
                     'overlay=total_precipitable_water' => 'Total Precipitable Water',
@@ -48,7 +48,41 @@ class Air extends ComponentBase
                     'overlay=misery_index'             => 'Misery Index',
                     'overlay=off'                      => 'None'
                 ],
-                'default'                              => 'surface/level'
+                'default'                              => ''
+            ],
+            'projection'                               => [
+                'title'                                => 'Projection',
+                'type'                                 => 'dropdown',
+                'options'                              => [
+                    'atlantis'                         => 'Atlantis',
+                    'azimuthal_equidistant'            => 'Azimuthal Equidistant',
+                    'conic_equidistant'                => 'Conic Equidistant',
+                    'equirectangular'                  => 'Equirectangular',
+                    'orthographic'                     => 'Orthographic',
+                    'patterson'                        => 'Patterson',
+                    'stereographic'                    => 'Stereographic',
+                    'waterman'                         => 'Waterman Butterfly',
+                    'winkel3'                          => 'Winkel Tripel'
+                ],
+                'default'                              => 'orthographic'
+            ],
+            'mapWidth'                                 => [
+                'title'                                => 'Map width',
+                'type'                                 => 'string',
+                'default'                              => '100%',
+                'description'                          => 'Map width in pixels or percents',
+                'placeholder'                          => 'map width',
+                'validationPattern'                    => '^[0-9]*%?$',
+                'validationMessage'                    => 'Map width must be integer or percent!'
+            ],
+            'mapHeight'                                => [
+                'title'                                => 'Map height',
+                'type'                                 => 'string',
+                'default'                              => '480',
+                'description'                          => 'Map height in pixels or percents',
+                'placeholder'                          => 'map width',
+                'validationPattern'                    => '^[0-9]*%?$',
+                'validationMessage'                    => 'Map height must be integer or percent!'
             ],
         ];
     }
