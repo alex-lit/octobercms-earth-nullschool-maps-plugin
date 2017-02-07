@@ -1,4 +1,4 @@
-# OctoberCMS Earth Null School Maps plugin
+# OctoberCMS EarthNull School Maps plugin
 
 Global map of wind, weather, and ocean conditions.
 
