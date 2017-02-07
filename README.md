@@ -104,3 +104,9 @@ This plugin adds integration with [Earth Null School maps](https://earth.nullsch
 - **Longitude** - Longitude (-360 - 360). Example: -214.68
 - **Latitude** - Latitude (-360 - 360). Example: 14.2
 - **Zoom** - Zoom (0-3000)
+
+## FAQ
+
+- How do I find the correct longitude, latitude and zoom?
+    - Go to [Earth Null School maps](https://earth.nullschool.net) service, select your map area and notice address bar:
+    ![banner](https://raw.githubusercontent.com/web2easy/OctoberCMS-Earth-NullSchool-Maps-Plugin/master/assets/images/documentation-1.png)
