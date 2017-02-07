@@ -1,5 +1,7 @@
 # OctoberCMS Earth NullSchool Maps plugin
 
+![banner](https://raw.githubusercontent.com/web2easy/OctoberCMS-Earth-NullSchool-Maps-Plugin/master/assets/images/banner.png)
+
 Global map of wind, weather, and ocean conditions.
 
 See current wind, weather, ocean, and pollution conditions, as forecast by supercomputers, on an interactive animated map. Updated every three hours.
