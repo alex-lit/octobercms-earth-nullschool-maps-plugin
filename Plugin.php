@@ -1,6 +1,5 @@
 <?php namespace AlexLit\EarthNullSchoolMaps;
 
-use Lang;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase

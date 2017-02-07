@@ -1,6 +1,5 @@
 <?php namespace AlexLit\EarthNullSchoolMaps\Components;
 
-use Lang;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 
