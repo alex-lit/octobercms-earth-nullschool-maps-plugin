@@ -1,10 +1,10 @@
-# OctoberCMS EarthNull School Maps plugin
+# OctoberCMS Earth NullSchool Maps plugin
 
 Global map of wind, weather, and ocean conditions.
 
 See current wind, weather, ocean, and pollution conditions, as forecast by supercomputers, on an interactive animated map. Updated every three hours.
 
-This plugin adds integration with [Earth Null School maps](https://earth.nullschool.net) service.
+This plugin adds integration with [Earth NullSchool maps](https://earth.nullschool.net) service.
 
 ## Available components:
 
@@ -108,5 +108,5 @@ This plugin adds integration with [Earth Null School maps](https://earth.nullsch
 ## FAQ
 
 - How do I find the correct longitude, latitude and zoom?
-    - Go to [Earth Null School maps](https://earth.nullschool.net) service, select your map area and notice address bar:
+    - Go to [Earth NullSchool maps](https://earth.nullschool.net) service, select your map area and notice address bar:
     ![banner](https://raw.githubusercontent.com/web2easy/OctoberCMS-Earth-NullSchool-Maps-Plugin/master/assets/images/documentation-1.png)
