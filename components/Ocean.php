@@ -77,7 +77,7 @@ class Ocean extends ComponentBase
                 'title'                                => 'Longitude',
                 'type'                                 => 'string',
                 'default'                              => '',
-                'description'                          => 'Longitude (0-360). Example: -214.68',
+                'description'                          => 'Longitude (-360 - 360). Example: -214.68',
                 'placeholder'                          => 'longitude',
                 'validationPattern'                    => '^-?[0-9]{1,3}\.?[0-9]*$',
                 'validationMessage'                    => 'Longitude must be decimal or integer!'
@@ -86,7 +86,7 @@ class Ocean extends ComponentBase
                 'title'                                => 'Latitude',
                 'type'                                 => 'string',
                 'default'                              => '',
-                'description'                          => 'Latitude (0-360). Example: -214.68',
+                'description'                          => 'Latitude (-360 - 360). Example: -214.68',
                 'placeholder'                          => 'latitude',
                 'validationPattern'                    => '^-?[0-9]{1,3}\.?[0-9]*$',
                 'validationMessage'                    => 'Latitude must be decimal or integer!'

@@ -10,7 +10,7 @@ class Particulates extends ComponentBase
     {
         return [
             'name'        => 'Particulates',
-            'description' => 'World particulates map',
+            'description' => 'World particulates map'
         ];
     }
 
@@ -64,7 +64,7 @@ class Particulates extends ComponentBase
                 'title'                     => 'Longitude',
                 'type'                      => 'string',
                 'default'                   => '',
-                'description'               => 'Longitude (0-360). Example: -214.68',
+                'description'               => 'Longitude (-360 - 360). Example: -214.68',
                 'placeholder'               => 'longitude',
                 'validationPattern'         => '^-?[0-9]{1,3}\.?[0-9]*$',
                 'validationMessage'         => 'Longitude must be decimal or integer!'
@@ -73,7 +73,7 @@ class Particulates extends ComponentBase
                 'title'                     => 'Latitude',
                 'type'                      => 'string',
                 'default'                   => '',
-                'description'               => 'Latitude (0-360). Example: -214.68',
+                'description'               => 'Latitude (-360 - 360). Example: -214.68',
                 'placeholder'               => 'latitude',
                 'validationPattern'         => '^-?[0-9]{1,3}\.?[0-9]*$',
                 'validationMessage'         => 'Latitude must be decimal or integer!'
