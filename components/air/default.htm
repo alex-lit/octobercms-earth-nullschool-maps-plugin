@@ -1,0 +1,14 @@
+ {% set height     = __SELF__.property('height') %}
+ {% set overlay    = __SELF__.property('overlay') %}
+ {% set projection = __SELF__.property('projection') %}
+ {% set mapWidth   = __SELF__.property('mapWidth') %}
+ {% set mapHeight  = __SELF__.property('mapHeight') %}
+ {% set longitude  = __SELF__.property('longitude') %}
+ {% set latitude   = __SELF__.property('latitude') %}
+ {% set zoom       = __SELF__.property('zoom') %}
+
+<iframe
+    src    = "https://earth.nullschool.net/#current/wind/{{ height }}/{{ overlay }}/{{ projection }}={{ longitude }},{{ latitude }},{{ zoom }}"
+    width  = "{{ mapWidth }}"
+    height = "{{ mapHeight }}"
+></iframe>
